@@ -10,6 +10,16 @@ class LinkedList:
         self.tail = new_node
         self.length = 1
 
+        def print_list(self):
+            #set a temp var to the head of the list
+            temp = self.head
+            #if temp has a value then run this loop
+            while temp is not None:
+                #print the value stored in temp
+                print(temp.value)
+                #set temp to the next node
+                temp = temp.next
+
 my_linked_list = LinkedList(4)
 
 print(my_linked_list)
