@@ -20,6 +20,19 @@ class LinkedList:
                 #set temp to the next node
                 temp = temp.next
 
+        def append(self, value):
+            new_node = Node(value)
+            temp = self.head
+            if self.head == None:
+                self.head = new_node
+                self.tail = new_node
+            else:
+                self.tail.next = new_node
+                self.tail = new_node
+            self.lenght += 1
+            return True
+            
+
 my_linked_list = LinkedList(4)
 
 print(my_linked_list)
